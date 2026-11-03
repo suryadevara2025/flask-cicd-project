@@ -5,7 +5,7 @@ def test_home():
     response = client.get("/")
 
     assert response.status_code == 200
-    assert b"Welcome to Flask CI/CD Pipeline!" in response.data
+    assert b"Welcome to Flask version 1 CI/CD Pipeline!" in response.data
 
 def test_health():
     client = app.test_client()
